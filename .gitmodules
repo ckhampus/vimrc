@@ -30,3 +30,7 @@
     ignore = dirty
 	path = bundle/zencoding
 	url = https://github.com/mattn/zencoding-vim.git
+[submodule "bundle/html5"]
+    ignore = dirty
+	path = bundle/html5
+	url = https://github.com/othree/html5.vim.git
