@@ -13,14 +13,17 @@ colorscheme solarized
 nmap <silent> <Leader>p :NERDTreeToggle<CR>
 
 " Change some Zen Coding mappings
-nmap <C-A> :call zencoding#expandAbbr(2)
-imap <C-A> <C-G>u<ESC>:call zencoding#expandAbbr(0)<CR>a
+nmap <C-A> :call zencoding#expandAbbr(2)<CR>:retab<CR>
+imap <C-A> <C-G>u<ESC>:call zencoding#expandAbbr(0)<CR>:retab<CR>a
 
 
 " Filetype
 set filetype=on
 filetype plugin on
 filetype indent on
+
+" File encoding
+set encoding=utf-8
 
 " Default Tab settings
 set ai
