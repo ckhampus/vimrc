@@ -1,3 +1,5 @@
+source $VIMRUNTIME/mswin.vim
+
 let mapleader = ","
 
 call pathogen#runtime_append_all_bundles()
@@ -38,6 +40,9 @@ set number
 
 " Disable older versions
 set nocompatible
+
+" Load ERB as html
+autocmd BufRead,BufNewFile *.erb set filetype=eruby.html
 
 " HTML (tab width 2 chr, no wrapping)
 autocmd FileType html set sw=2
